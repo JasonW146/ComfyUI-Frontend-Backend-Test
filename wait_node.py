@@ -32,5 +32,4 @@ class WaitNode:
         PromptServer.instance.send_sync("wait-popup", {"message": "Please continue..."})
         wait_for_continue()
         return ("User continued",)
-
-NODE_CLASS_MAPPINGS = {"WaitNode": WaitNode}
+    

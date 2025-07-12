@@ -1,4 +1,6 @@
-from .wait_node import NODE_CLASS_MAPPINGS, WaitNode
+from .wait_node import WaitNode
+
+NODE_CLASS_MAPPINGS = {"WaitNode": WaitNode}
 
 WEB_DIRECTORY = "./js"
 
