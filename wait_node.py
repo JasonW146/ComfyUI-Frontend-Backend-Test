@@ -30,7 +30,7 @@ class WaitNode:
     def wait(self):
         # Trigger frontend popup
         PromptServer.instance.send_sync("wait-popup", {"message": "Please continue..."})
-        wait_for_continue(timeout=600)
+        wait_for_continue()
         return ("User continued",)
 
 NODE_CLASS_MAPPINGS = {"WaitNode": WaitNode}
